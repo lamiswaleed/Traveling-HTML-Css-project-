@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<head>
+    <title>offers</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        header{
+            background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url("toursim_files/Home.png");
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: 100%;
+            height: 100vh;
+        }
+        ul{
+            display: flex;
+            float: right;
+            list-style-type: none;
+            margin: 30px;
+            justify-content: center;
+            align-items: center;
+        }
+        ul li{
+            display: inline-block;
+        }
+        ul li a{
+            text-decoration: none;
+            font-size: 20px;
+            color: rgb(255, 255, 255);
+            padding: 5px 20px;
+            border: 1px solid transparent;
+            border-radius: 10PX;
+            transition: 0.6s ease;
+        }
+         ul li a:hover:not(#sign-in){
+            background-color: rgb(255, 255, 255);
+            color: black;
+
+        }
+        ul li.active a{
+            background-color: rgb(255, 255, 255);
+            color: black;
+            zoom: normal;
+        }
+        button{
+            border: 1px solid #fff;
+            background-color:#fff;
+            font-size: 20px;
+            color: blue;
+            transition: 0.6s ease;
+            border-radius: 10PX;
+        }
+        button:hover{
+        background-color: rgb(172, 172, 166);
+        }
+        
+        .logo1 img {
+        float: left;
+        width: 160px;
+        height: 100px;
+        padding-left:30px ;
+        padding-top: 10px;
+        filter: contrast(400%);
+       }
+       .title{
+       position: absolute;
+       top:15%;
+       left:45%;
+       transform: translate(-50%,-50%)
+       }
+       .title h2{
+       color: #fff;
+       font-size: 23px;
+       font-family:inherit;
+       }
+       .container{
+        position: relative;
+        left: 300px;
+        top: 90px;
+        width: 450px;
+        height: 475px;
+        background-color: var(--background);
+        border-radius: 8px;
+        transform-origin: center left;
+        box-shadow: 0 5px 12px rgba(0,0,0,0.5);
+        outline: 1px solid var(--background);
+        overflow: hidden;
+        margin: 20px;
+       }
+       .form{
+        width: 100%;
+        max-width: 600px;
+            }
+        .inputs{
+            margin-bottom: 30px;
+            position: relative;
+            
+        }
+        input,textarea{
+            float: left;
+            width: 400px;
+            padding: 3px;
+            border: 1px solid #fff;
+            color: #fff;
+            background: transparent;
+            font-size: 15px;
+            border-radius: 10px;
+            margin-left: 10px;
+        }
+        label{
+        
+            float: right;
+            position: absolute;
+            margin-left: 10px;
+            padding:2px;
+            color: #fff;
+        }
+        .options,label{
+            color: #fff;
+            margin-left: 10px;
+        }
+        select{
+            background: transparent;
+            color: #000000;
+            margin-left: 10px;
+            border-radius: 10px;
+        }
+        button{
+            color:#fff;
+            border: 1px solid #fff;
+            background-color:transparent;
+            font-size: 12px;
+            transition: 0.6s ease;
+            border-radius: 6PX;
+            padding: 5px 30px;
+            margin: 10px; 
+        }
+        button:hover{
+        background-color: rgb(172, 172, 166);
+        color: black;
+        }
+      
+        .footer{
+        position: fixed;
+        top:95%; 
+        left:36%;
+        color: #fff;
+        }
+            </style>
+</head>
+<body>    
+    <header>
+        <div class="main">
+            <div class="logo1"><img src="toursim_files/ffff12.png" alt="logo1"/></div>
+            <ul>   
+                <li class="active"><a href="file:///C:/Users/Lenovo/OneDrive/Pictures/project%20html&css/page_1.html">about us</a></li>
+                <li><a href="file:///C:/Users/Lenovo/OneDrive/Pictures/project%20html&css/page%20-2.html">offers</a></li>
+                <button><a href="file:///C:/Users/Lenovo/OneDrive/Pictures/project%20html&css/page-3.html" id="Booking">Booking</a></button>
+            </ul>
+          </div>
+          
+          <footer class="footer">
+            <p>&copy;In collaboration with the ministry of youth and sports</p>
+        </footer>
+        <div class="title">
+            <h2>pleas fill this form</h2></div> 
+            <div>
+                <div class="container">
+                
+                <form>
+                    <div class="inputs">
+                        <label for="name">first name</label><br>
+                        <input type="text" id="name"required>
+                        
+                    </div>
+                    <div class="inputs">
+                        <label for="name">last name</label><br>
+                        <input type="text" id="name"required>
+                        
+                    </div>
+                    <div class="inputs">
+                        <label for="number">phone number</label><br>
+                        <input type="text" id="number"required>
+                        
+                    </div>
+                    <div class="inputs"> 
+                        <label for="number2">number of members</label><br>
+                        <input type="text" id="number2"required>
+                       
+                    </div>
+                   
+                    <div class="inputs">
+                        <label for="e-mail">E-mail</label><br>
+                        <input type="text" id="e-mail"required>
+                        
+                    </div>
+                    <div class="options">
+
+                    <div>
+                        <label1>hotel</label1><br>
+                        <select style="width: 25%;">
+                            <option>7 stares</option>
+                            <option>5 stares</option>
+                            <option>4 stares</option>
+                            <option>3 stares</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label1>which offer</label1><br>
+                        <select style="width: 25%;">
+                            <option>families</option>
+                            <option>meditation</option>
+                            <option>coubles</option>
+                            <option>student</option>
+                        </select>
+                    </div>
+                    
+                   <div>
+                     <label1>way of bayment</label1><br>
+                    <select style="width: 25%;">
+                        <option>cash</option>
+                        <option>insta bay</option>
+                        <option>vodavon cash</option>
+                        <option>fawery</option>
+                       
+                    </select>
+
+                   </div> 
+                <legend>any comment</legend> <textarea style="width: 50%; height:70px;"></textarea></lable>
+
+    
+                </div>
+                   <div class="inputs2">
+                </div>
+                <button type="submit">SUBMIT</button>
+                <button type="reset">RESET</button>
+        
+                </div>
+            </form>
+            </div>
+        </header>
+</body>
+</html>

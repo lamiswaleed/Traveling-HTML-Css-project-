@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<head>
+    <title>let's go</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        header{
+            background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url("toursim_files/Home.png");
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: 100%;
+            height: 100vh;
+        }
+        ul{
+            float: right;
+            list-style-type: none;
+            margin: 30px;
+        }
+        ul li{
+            display: inline-block;
+        }
+        ul li a{
+            text-decoration: none;
+            font-size: 20px;
+            color: rgb(255, 255, 255);
+            padding: 5px 20px;
+            border: 1px solid transparent;
+            border-radius: 10PX;
+            transition: 0.6s ease;
+        }
+         ul li a:hover:not(#sign-in){
+            background-color: rgb(255, 255, 255);
+            color: black;
+
+        }
+        ul li.active a{
+            background-color: rgb(255, 255, 255);
+            color: black;
+            zoom: normal;
+        }
+        button{
+            color:#fff;
+            border: 1px solid #fff;
+            background-color:transparent;
+            font-size: 12px;
+            
+            transition: 0.6s ease;
+            border-radius: 6PX;
+            padding: 5px 30px;
+            margin: 10px; 
+        }
+        button:hover{
+        background-color: rgb(172, 172, 166);
+        color: black;
+        }
+        .logo1 img {
+        float: left;
+        width: 160px;
+        height: 100px;
+        padding-left:30px ;
+        padding-top: 10px;
+        filter: contrast(400%);
+       }
+       .title{
+       position: absolute;
+       top:30%;
+       left:13%;
+       transform: translate(-50%,-50%)
+       }
+       .title h1{
+       color: #fff;
+       font-size: 35px;
+       font-family:inherit;
+       }
+       .paragraph{
+       position: absolute;
+       top:120%;
+       left:0%;
+       }
+       .paragraph p{
+       color: #fff;
+       font-size: 23px;
+       font-family:inherit;
+       }
+       .videio{
+       width: 350px;
+       height: 280px;
+       padding-top: 13%;
+       padding-left:60%;
+       filter: opacity(0.6);
+       }
+      .LINKS ul{
+       float: left;
+       top:75%;
+       position: absolute;
+        }
+        .LINKS a:hover:not(#sign-in){
+         max-zoom: 40PX;
+        }
+        .footer{
+        padding-top:11%; 
+        padding-left:36%;
+        color: #fff;
+        }
+            </style>
+</head>
+<body>    
+    <header>
+        <div class="main">
+            <div class="logo1"><img src="toursim_files/ffff12.png" alt="logo1"/></div>
+            <ul>   
+                <li class="active"><a href="file:///C:/Users/Lenovo/OneDrive/Pictures/project%20html&css/page_1.html">about us</a></li>
+                <li><a href="file:///C:/Users/Lenovo/OneDrive/Pictures/project%20html&css/page%20-2.html">offers</a></li>
+                <button><a href="file:///C:/Users/Lenovo/OneDrive/Pictures/project%20html&css/page-3.html" id="Booking">Booking</a></button>
+            </ul>
+          </div>
+        </div>
+
+        <div class="title">
+            <h1>LET'S TRAVEL </h1>
+           <div class="paragraph"> <p>Traveling is not just about the places you go; it's about the experiences that change you, 
+             the memories that stay with you,and the stories you carry home.
+             Embrace the journey, for in every step,
+             you discover a new piece of yourself.</p>
+            </div>
+        </div>
+
+            <div class="videio">
+        <iframe width="470" height="315" src="https://www.youtube.com/embed/YFhwEJosUsU?si=Ysl71IvexcjwhINS" title="YouTube video player" frameborder="0" allow="
+        accelerometer;  autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </div>
+
+    <div class="LINKS">
+        <ul>
+         <li><a href="https://www.facebook.com/letstravelegypt"> facebook<img src="toursim_files/fc-1.png " width="65px" height="65"/></a></li>   
+         <li><a href="https://www.instagram.com/lets.traveleg/">instagram<img src="toursim_files/in-1.png " width="65px" height="65"/></a></li>
+        </ul>
+          </div> 
+          <footer class="footer">
+        <p>&copy;In collaboration with the ministry of youth and sports</p>
+    </footer>
+    </header>    
+</body>
+</html>
